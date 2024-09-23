@@ -9,6 +9,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../tailwind/tailwind.config.js" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/logo/DGLogo.png') }}">
     <!-- Start Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
