@@ -88,7 +88,7 @@
                     <ul class="hidden lg:flex gap-8 text-[17px] 2xl:text-[18px] items-center ">
                         <li>
                             <a href="{{ url('/') }}"
-                                class="{{ request()->is('/') ? ' decoration-[#ffc30e] hover:underline underline-offset-8 text-black' : 'text-black' }}">
+                                class="{{ request()->is('/') ? ' decoration-[#ffc30e] underline underline-offset-8 text-black' : 'decoration-[#ffc30e] hover:underline underline-offset-8 text-black' }}">
                                 Home</a>
                         </li>
 

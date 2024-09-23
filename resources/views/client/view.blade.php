@@ -3,12 +3,12 @@
     <!-- Detail -->
     <div class="max-w-screen-lg mx-auto my-12 mt-24 px-2 lg:px-0">
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-5 lg-px-0 items-center mb-6">
+            <div class=" col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-5 lg-px-0 items-center mb-6">
                 <div class="max-w-[400px] mx-auto flex flex-col gap-2">
                     <img class="w-full rounded-md cursor-pointer popup-image"
                         src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/03-640x690.jpg"
                         alt="Book Cover" />
-                    <div class="grid grid-cols-4 gap-2">
+                    <div class="grid grid-cols-4 ">
                         <img class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md popup-image"
                             src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/08-640x690.jpg"
                             alt="Thumbnail 1" />
@@ -47,6 +47,112 @@
                     &rarr;
                 </button>
             </div>
+
+            <!--End Left Item -->
+
+            <!-- Rigth Item -->
+            <div class="lg:col-span-7 col-span-12 sm:col-span-12 md:col-span-12">
+                <h1 class="text-gray-800 font-serif dark:text-gray-100 block mt-1 text-2xl leading-tight font-medium mb-2">
+                    Beautiful Things’ A Memoir
+                </h1>
+
+                <hr class="w-full" />
+
+                <div class="flex flex-col gap-6 my-4">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                Author
+                            </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                                Jim Collins
+                            </p>
+                        </div>
+
+
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                Year
+                            </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                                2001
+                            </p>
+                        </div>
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                Pages
+                            </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                                299
+                            </p>
+                        </div>
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                ISBN
+                            </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                                0712676090
+                            </p>
+                        </div>
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                Last Update
+                            </p>
+                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                                14-Sep-2024
+                            </p>
+                        </div>
+                        <div class="flex nowrap">
+                            <p
+                                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5 flex-shrink-0">
+                                Keywords
+                            </p>
+                            <p class="space-x-1 space-y-1 text-sm text-gray-600 dark:text-gray-200">
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 whitespace-nowrap capitalize">
+                                    finance
+                                </span>
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 whitespace-nowrap capitalize">
+                                    Accounting
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="mt-8">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                        $15.00
+                    </h2>
+                </div>
+                <div class="mt-8">
+                    <div class="flex items-center space-x-2">
+                        <!-- Quantity Control -->
+                        <button class="px-3 py-1 border border-gray-300 text-gray-700 focus:outline-none">
+                            -
+                        </button>
+                        <span class="px-3 py-1 border-t border-b border-gray-300">1</span>
+                        <button class="px-3 py-1 border border-gray-300 text-gray-700 focus:outline-none">
+                            +
+                        </button>
+
+                        <!-- Add to Cart Button -->
+                        <button
+                            class="px-4 py-2 bg-blue-700 text-[12px] transition hover:bg-[#ffc30e] text-white font-semibold rounded-md focus:outline-none">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--End Rigth Item -->
 
             <script>
                 const images = document.querySelectorAll(".popup-image");
@@ -99,84 +205,6 @@
                 });
             </script>
 
-            <!--End Left Item -->
-
-            <!-- Rigth Item -->
-            <div class="col-span-7">
-                <h1 class="text-gray-800 font-serif dark:text-gray-100 block mt-1 text-2xl leading-tight font-medium mb-2">
-                    Beautiful Things’ A Memoir
-                </h1>
-
-                <hr class="w-full" />
-
-                <div class="flex flex-col gap-6 my-4">
-                    <div class="flex nowrap">
-                        <p
-                            class="w-[150px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5">
-                            Brand
-                        </p>
-                        <p class="text-sm text-gray-600 dark:text-gray-200">
-                            Apple
-                        </p>
-                    </div>
-                    <div class="flex nowrap">
-                        <p
-                            class="w-[150px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5">
-                            Product Code
-                        </p>
-                        <p class="text-sm text-gray-600 dark:text-gray-200">
-                            product 20
-                        </p>
-                    </div>
-                    <div class="flex nowrap">
-                        <p
-                            class="w-[150px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5">
-                            SKU
-                        </p>
-                        <p class="text-sm text-gray-600 dark:text-gray-200">
-                            test 1
-                        </p>
-                    </div>
-                    <div class="flex">
-                        <p
-                            class="tracking-wide text-sm underline text-blue-500 dark:text-gray-300 font-semibold border-gray-600 dark:border-gray-300 pr-5 mr-5">
-                            Product available in stock : 993
-                        </p>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="mt-8">
-                    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                        $15.00
-                    </h2>
-                </div>
-                <div class="mt-8">
-                    <div class="flex items-center space-x-2">
-                        <!-- Quantity Control -->
-                        <button class="px-3 py-1 border border-gray-300 text-gray-700 focus:outline-none">
-                            -
-                        </button>
-                        <span class="px-3 py-1 border-t border-b border-gray-300">1</span>
-                        <button class="px-3 py-1 border border-gray-300 text-gray-700 focus:outline-none">
-                            +
-                        </button>
-
-                        <!-- Add to Cart Button -->
-                        <button
-                            class="px-4 py-2 bg-blue-700 text-[12px] transition hover:bg-[#ffc30e] text-white font-semibold rounded-md focus:outline-none">
-                            ADD TO CART
-                        </button>
-
-                        <!-- Wishlist Button -->
-                        <button class="p-3 py-1 border border-gray-300 text-gray-700 focus:outline-none">
-                            ♥
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--End Rigth Item -->
         </div>
         <!-- Related -->
         <div class="mt-8">
