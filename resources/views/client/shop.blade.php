@@ -6,143 +6,15 @@
             {{-- category --}}
             <div class="col-span-3 px-2 lg-px-0 mr-2 items-center mb-6">
                 {{-- category --}}
-                <div class="max-w-[400px] flex flex-col gap-2 font-serif text-xl">
-                    Catacgories
+                <div class="max-w-[400px] text-sm text-start  flex flex-col gap-2 font-serif ">
+                    <a href="/" class="">
+                        <img src="{{ asset('assets/logo/Cora_logo.png') }}" class="w-24 mx-auto">
+                    </a>
+                    <p>Email: <a href="mailto:info@yourdomain.com" class="text-blue-600 underline">info@yourdomain.com</a></p>
+                    <p>Address: 1234 Main Street, City, Country</p>
                 </div>
-                <hr />
-                {{-- sub category --}}
-                <div class="grid p-0 text-[14px] text-slate-500 space-y-2">
-                    <div
-                        class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                        <ul class="space-y-2">
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                    aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
-                                    {{-- <svg aria-hidden="true"
-                                        class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                                            clip-rule="evenodd"></path>
-                                    </svg> --}}
-                                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Food Recipe </span>
-                                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <ul id="dropdown-pages" class="hidden py-2 space-y-2">
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Fairytale</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Fantasy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Graphic
-                                            novel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                    aria-controls="dropdown-sales" data-collapse-toggle="dropdown-sales">
-                                    {{-- <svg aria-hidden="true"
-                                        class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                            clip-rule="evenodd"></path>
-                                    </svg> --}}
-                                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Kids Books</span>
-                                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <ul id="dropdown-sales" class="hidden py-2 space-y-2">
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Art/architecture
+                <hr class="mt-5">
 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                                            Autobiography
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Biography
-
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                    aria-controls="dropdown-authentication" data-collapse-toggle="dropdown-authentication">
-                                    {{-- <svg aria-hidden="true"
-                                        class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg> --}}
-                                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Love Story</span>
-                                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                                            Cookbook </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Corruption</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Autobiography</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bg-green-100 p-4 col-span-1 mt-10">
-                    <p class="text-sm">Flat 30% Off On Story Book</p>
-                    <h2 class="text-xl font-semibold mt-2">
-                        The Most Popular Book By Vive Viajando
-                    </h2>
-
-                    <div class="">
-                        <img src="{{ asset('assets/images/book3.jpg') }}" alt="Vive Viajando Book" class="my-4" />
-                    </div>
-                </div>
-                <div class="max-w-[400px] flex flex-col gap-2 font-serif text-xl mt-8">
-                    Latest Product
-                </div>
-                <hr />
                 <div class="space-y-7 mt-8">
                     <div class="flex items-center justify-center">
                         <div>
@@ -187,6 +59,82 @@
             </div>
             {{-- Right comtent --}}
             <div class="col-span-8">
+                <div id="controls-carousel" class="relative w-full mt-10">
+                    <!-- Carousel wrapper -->
+                    <div class="relative aspect-[16/5] md:aspect-[16/5]  w-full overflow-hidden ">
+                        <!-- Swiper -->
+                        <swiper-container class="mySwiper w-full h-full" centered-slides="true" autoplay-delay="4000"
+                            autoplay-disable-on-interaction="false">
+                            <!-- slide 1 -->
+                            <swiper-slide class="w-full h-full bg-[#fff4d3]">
+                                <div class="flex h-full w-full relative bg-cover bg-center bg-blend-multiply"
+                                    data-carousel-item style="background-image: url('assets/images/banner1.png');">
+                                    <!-- Dark Overlay -->
+                                    {{-- <div class="absolute inset-0 bg-[#151516a6] bg-opacity-80"></div> --}}
+
+                                    <!-- Content -->
+                                    <div
+                                        class="absolute top-1/2 left-3 md:left-5 lg:left-20 transform -translate-y-1/2 z-10 w-full max-w-md lg:max-w-[560px] text-left text-white px-4 lg:px-0">
+                                        <p
+                                            class="text-[12px] sm:text-sm md:text-xl lg:text-xl font-costum1 text-gray-700 max-w-[9rem] sm:max-w-[11rem] md:max-w-full">
+                                            Get 25% Off On Every Book
+                                        </p>
+                                        <h1
+                                            class="md:mt-3 mt-1  text-sm sm:text-xl md:text-2xl lg:text-4xl font-costum1 text-black max-w-[9rem] sm:max-w-[11rem] md:max-w-full">
+                                            SHOP
+                                        </h1>
+                                        {{-- <p
+                                            class="md:mt-3 mt-1 line-clamp-2 sm:line-clamp-3 md:line-clamp-4 lg:line-clamp-5 text-[10px] md:text-[12px] lg:text-sm  text-gray-700 mt-1  max-w-[30ch] sm:max-w-[60ch] ">
+                                            eum iure reprehenderit qui in ea voluptate velit From
+                                            City living Quis autem vel Quis autem vel eum iure
+                                        </p>
+                                        <div class="mt-1 md:mt-7">
+                                            <a href="{{ url('/mobile_app_development') }}"
+                                                class="text-[8px] sm:text-sm md:text-lg   rounded-md p-1 px-2 md:px-3 md:py-1  text-black duration-300 border bg-[#FFC30E]  transition button-hover">
+                                                Shop Now
+                                            </a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                            <!-- slide 3 -->
+                            <swiper-slide class="w-full h-full bg-[#fff4d3]">
+                                <div class="flex h-full w-full relative bg-cover bg-center bg-blend-multiply"
+                                    data-carousel-item style="background-image: url('assets/images/banner1.png');">
+                                    <!-- Dark Overlay -->
+                                    {{-- <div class="absolute inset-0 bg-[#151516a6] bg-opacity-80"></div> --}}
+
+                                    <!-- Content -->
+                                    <div
+                                        class="absolute top-1/2 left-3 md:left-5 lg:left-20 transform -translate-y-1/2 z-10 w-full max-w-md lg:max-w-[560px] text-left text-white px-4 lg:px-0">
+                                        <p
+                                            class="text-[12px] sm:text-sm md:text-xl lg:text-xl font-costum1 text-gray-700 max-w-[9rem] sm:max-w-[11rem] md:max-w-full">
+                                            Get 25% Off On Every Book
+                                        </p>
+                                        <h1
+                                            class="md:mt-3 mt-1  text-sm sm:text-xl md:text-2xl lg:text-4xl font-costum1 text-black max-w-[9rem] sm:max-w-[11rem] md:max-w-full">
+                                            SHOP
+                                        </h1>
+                                        {{-- <p
+                                            class="md:mt-3 mt-1 line-clamp-2 sm:line-clamp-3 md:line-clamp-4 lg:line-clamp-5 text-[10px] md:text-[12px] lg:text-sm  text-gray-700 mt-1  max-w-[30ch] sm:max-w-[60ch] ">
+                                            eum iure reprehenderit qui in ea voluptate velit From
+                                            City living Quis autem vel Quis autem vel eum iure
+                                        </p>
+                                        <div class="mt-1 md:mt-7">
+                                            <a href="{{ url('/mobile_app_development') }}"
+                                                class="text-[8px] sm:text-sm md:text-lg   rounded-md p-1 px-2 md:px-3 md:py-1  text-black duration-300 border bg-[#FFC30E]  transition button-hover">
+                                                Shop Now
+                                            </a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+
+                        <!-- Swiper JS -->
+                        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+                    </div>
+                </div>
                 <div class="mt-8 grid grid-cols-4 gap-10">
                     <div>
                         <div
