@@ -80,44 +80,44 @@
     <!-- End hero -->
     <!-- Start Find Your Book -->
     <div class="mt-10 max-w-screen-lg mx-auto">
-        <div class="text-center text-4xl">
+        <div class="text-center text-2xl sm:text-3xl md:text-4xl">
             <p>Find Your Book</p>
         </div>
         <div class="grid grid-cols-2 gap-5 px-5 pt-5 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
             <!-- Item 1 -->
             <a href="{{ url('/book') }}"
-                class="flex flex-col items-center justify-center space-y-2 bg-blue-100 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300">
+                class="flex flex-col items-center justify-center space-y-2 bg-blue-100 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-4">
                 <img src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/cat-01-70x70.png"
-                    alt="Biography" />
-                <h2>Biography</h2>
+                    alt="Biography" class="w-16 h-16 sm:w-20 sm:h-20" />
+                <h2 class="text-sm sm:text-base md:text-lg">Biography</h2>
             </a>
             <!-- Item 2 -->
             <div
-                class="flex flex-col items-center justify-center space-y-2 bg-red-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300">
+                class="flex flex-col items-center justify-center space-y-2 bg-red-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-4">
                 <img src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/cat-02-70x70.png"
-                    alt="Food Recipe" />
-                <h2>Food Recipe</h2>
+                    alt="Food Recipe" class="w-16 h-16 sm:w-20 sm:h-20" />
+                <h2 class="text-sm sm:text-base md:text-lg">Food Recipe</h2>
             </div>
             <!-- Item 3 -->
             <div
-                class="flex flex-col items-center justify-center space-y-2 bg-purple-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300">
+                class="flex flex-col items-center justify-center space-y-2 bg-purple-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-4">
                 <img src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/cat-05-70x70.png"
-                    alt="Education" />
-                <h2>Education</h2>
+                    alt="Education" class="w-16 h-16 sm:w-20 sm:h-20" />
+                <h2 class="text-sm sm:text-base md:text-lg">Education</h2>
             </div>
             <!-- Item 4 -->
             <div
-                class="flex flex-col items-center justify-center space-y-2 bg-blue-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300">
+                class="flex flex-col items-center justify-center space-y-2 bg-blue-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-4">
                 <img src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/cat-04-70x70.png"
-                    alt="Kids Story" />
-                <h2>Kids Story</h2>
+                    alt="Kids Story" class="w-16 h-16 sm:w-20 sm:h-20" />
+                <h2 class="text-sm sm:text-base md:text-lg">Kids Story</h2>
             </div>
             <!-- Item 5 -->
             <div
-                class="flex flex-col items-center justify-center space-y-2 bg-lime-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-7 px-14">
+                class="flex flex-col items-center justify-center space-y-2 bg-lime-50 col-span-1 cursor-pointer hover:-translate-y-3 transition-all duration-300 p-4">
                 <img src="https://opc.webdigify.com/OPC03/OPC082_bookie/image/cache/catalog/cat-03-70x70.png"
-                    alt="Love Story" />
-                <h2>Love Story</h2>
+                    alt="Love Story" class="w-16 h-16 sm:w-20 sm:h-20" />
+                <h2 class="text-sm sm:text-base md:text-lg">Love Story</h2>
             </div>
         </div>
     </div>
@@ -125,7 +125,7 @@
 
 
     <!-- Start category -->
-    <section class="max-w-screen-xl mx-auto mt-10 space-y-6">
+    <section class="max-w-screen-xl mx-auto mt-10 space-y-6 ">
         <div>
             <p class="text-center text-4xl">
                 Our Categories
@@ -204,7 +204,8 @@
             </div>
         </div>
 
-        <div class="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        {{-- Book --}}
+        <div class="max-w-screen-xl mx-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
 
             <!-- Item 1 -->
             <div
@@ -256,32 +257,7 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
-                            <!-- Add to card -->
-                            <!-- <div class="font-medium text-sm col-span-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                class="text-gray-800 border bg-[#FFC30E] hover:bg-white hover:text-[#FFC30E] hover:shadow-lg transition rounded-full text-sm p-1 px-2 flex items-center justify-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    height="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    viewBox="0 0 24 24"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    fill="none"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke="currentColor"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-width="2"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linecap="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linejoin="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    class="lucide lucide-shopping-cart"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="8" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="19" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                Add to Card
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -309,32 +285,7 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
-                            <!-- Add to card -->
-                            <!-- <div class="font-medium text-sm col-span-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                class="text-gray-800 border bg-[#FFC30E] hover:bg-white hover:text-[#FFC30E] hover:shadow-lg transition rounded-full text-sm p-1 px-2 flex items-center justify-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    height="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    viewBox="0 0 24 24"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    fill="none"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke="currentColor"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-width="2"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linecap="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linejoin="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    class="lucide lucide-shopping-cart"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="8" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="19" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                Add to Card
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -362,32 +313,145 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
-                            <!-- Add to card -->
-                            <!-- <div class="font-medium text-sm col-span-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                class="text-gray-800 border bg-[#FFC30E] hover:bg-white hover:text-[#FFC30E] hover:shadow-lg transition rounded-full text-sm p-1 px-2 flex items-center justify-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    height="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    viewBox="0 0 24 24"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    fill="none"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke="currentColor"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-width="2"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linecap="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    stroke-linejoin="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    class="lucide lucide-shopping-cart"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="8" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="19" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                Add to Card
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <div class="">
+                    <a href="#">
+                        <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            alt="" />
+                    </a>
+
+                    <div class="pt-2 space-y-2">
+                        <div>
+                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                Beautiful Things’ A Memoir. Beautiful
+                                Things’ A Memoir. Beautiful Things’ A
+                                Memoir.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 items-center w-full">
+                            <div class="col-span-1">
+                                <p class="text-gray-800 text-xl">$20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 1 -->
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <a href="{{ url('/view') }}">
+                    <div class="">
+                        <a href="{{ url('/view') }}">
+                            <img class="mx-auto h-full aspect-[6/9] rounded-lg"
+                                src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                                alt="" />
+                        </a>
+                        <div class="pt-2 space-y-2">
+                            <div>
+                                <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                    Beautiful Things’ A Memoir. Beautiful
+                                    Things’ A Memoir. Beautiful Things’ A
+                                    Memoir.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 items-center w-full">
+                                <div class="col-span-1">
+                                    <p class="text-gray-800 text-xl">$20.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Item 2 -->
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <div class="">
+                    <a href="#">
+                        <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
+                            alt="" />
+                    </a>
+
+                    <div class="pt-2 space-y-2">
+                        <div>
+                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                Beautiful Things’ A Memoir. Beautiful
+                                Things’ A Memoir. Beautiful Things’ A
+                                Memoir.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 items-center w-full">
+                            <div class="col-span-1">
+                                <p class="text-gray-800 text-xl">$20.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <div class="">
+                    <a href="#">
+                        <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            alt="" />
+                    </a>
+
+                    <div class="pt-2 space-y-2">
+                        <div>
+                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                Beautiful Things’ A Memoir. Beautiful
+                                Things’ A Memoir. Beautiful Things’ A
+                                Memoir.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 items-center w-full">
+                            <div class="col-span-1">
+                                <p class="text-gray-800 text-xl">$20.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <div class="">
+                    <a href="#">
+                        <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
+                            alt="" />
+                    </a>
+
+                    <div class="pt-2 space-y-2">
+                        <div>
+                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                Beautiful Things’ A Memoir. Beautiful
+                                Things’ A Memoir. Beautiful Things’ A
+                                Memoir.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 items-center w-full">
+                            <div class="col-span-1">
+                                <p class="text-gray-800 text-xl">$20.00</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -424,60 +488,65 @@
     <!-- End category -->
 
     <!-- Start Section -->
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-4 mt-20 overflow-hidden">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mt-20 overflow-hidden px-4">
+        <!-- Left Column (Book Promotion) -->
         <div class="bg-green-100 p-4 col-span-1">
-            <p class="text-sm">Flat 30% Off On Story Book</p>
-            <h2 class="text-xl font-semibold mt-2">
+            <p class="text-xs sm:text-sm">Flat 30% Off On Story Book</p>
+            <h2 class="text-lg sm:text-xl font-semibold mt-2">
                 The Most Popular Book By Vive Viajando
             </h2>
             <a href="{{ url('/shop') }}" class="text-blue-500 mt-4 block">SHOP NOW</a>
             <img src="{{ asset('assets/images/sub-banner-1-removebg-preview.png') }}" alt="Vive Viajando Book"
-                class="mt-4 aspect-square object-cover p-4" />
+                class="mt-4 aspect-square object-cover p-4 w-full sm:w-auto" />
         </div>
-        <div class="grid col-span-2 grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Lords Of The Rings -->
-            <div class="bg-gray-100 p-4 flex items-center">
+
+        <!-- Right Column (Other Books) -->
+        <div class="grid col-span-1 md:col-span-2 grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Lords Of The Rings 1 -->
+            <div class="bg-gray-100 p-4 flex flex-col sm:flex-row items-center">
                 <div>
-                    <h2 class="text-xl font-semibold">
+                    <h2 class="text-lg sm:text-xl font-semibold">
                         Lords Of The Rings Lords Of The Rings
                     </h2>
                     <a href="#" class="text-blue-500 mt-2 block">SHOP NOW</a>
                 </div>
-                <div>
+                <div class="mt-4 sm:mt-0 sm:ml-4">
                     <img src="{{ asset('assets/images/sub-banner-2-removebg-preview.png') }}" alt="Lords Of The Rings"
-                        class="w-56" />
+                        class="w-32 sm:w-56" />
                 </div>
             </div>
-            <!-- Lords Of The Rings -->
-            <div class="bg-pink-100 p-4 flex items-center">
+
+            <!-- Lords Of The Rings 2 -->
+            <div class="bg-pink-100 p-4 flex flex-col sm:flex-row items-center">
                 <div>
-                    <h2 class="text-xl font-semibold">
+                    <h2 class="text-lg sm:text-xl font-semibold">
                         Lords Of The Rings Lords Of The Rings
                     </h2>
                     <a href="#" class="text-blue-500 mt-2 block">SHOP NOW</a>
                 </div>
-                <div>
+                <div class="mt-4 sm:mt-0 sm:ml-4">
                     <img src="{{ asset('assets/images/sub-banner-2-removebg-preview.png') }}" alt="Lords Of The Rings"
-                        class="w-56" />
+                        class="w-32 sm:w-56" />
                 </div>
             </div>
 
             <!-- The Scarlet Pimpernel -->
-            <div class="col-span-2 bg-yellow-100 p-4 flex items-center gap-5">
+            <div class="col-span-1 sm:col-span-2 bg-yellow-100 p-4 flex flex-col sm:flex-row items-center gap-5">
                 <div>
-                    <p class="text-sm">Choose Your Favourite Book</p>
-                    <h2 class="text-xl font-semibold mt-2">
+                    <p class="text-xs sm:text-sm">Choose Your Favourite Book</p>
+                    <h2 class="text-lg sm:text-xl font-semibold mt-2">
                         The Scarlet Pimpernel Emma Orexy
                     </h2>
                     <a href="#" class="text-blue-500 mt-4 block">SHOP NOW</a>
                 </div>
-                <div class="flex mt-4 space-x-4">
+                <div class="flex mt-4 sm:mt-0 sm:ml-4">
                     <img src="{{ asset('assets/images/sub-banner-1-removebg-preview.png') }}" alt="Book 1"
-                        class="" />
+                        class="w-32 sm:w-48" />
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Start Seaction -->
 
     <!-- Start seaction -->
@@ -548,39 +617,43 @@
                 FEATURED
             </button>
         </div>
-        <div class="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
+        {{-- Newest Book --}}
+        <div class="max-w-screen-xl mt-5 mx-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+
             <!-- Item 1 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
-                <div class="">
-                    <a href="#">
-                        <img class="mx-auto h-full aspect-[6/9] rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
-                            alt="" />
-                    </a>
-
-                    <div class="pt-2 space-y-2">
-                        <div>
-                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
-                                Beautiful Things’ A Memoir. Beautiful
-                                Things’ A Memoir. Beautiful Things’ A
-                                Memoir.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-2 items-center w-full">
-                            <div class="col-span-1">
-                                <p class="text-gray-800 text-xl">$20.00</p>
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <a href="{{ url('/view') }}">
+                    <div class="">
+                        <a href="{{ url('/view') }}">
+                            <img class="mx-auto h-full aspect-[6/9] rounded-lg"
+                                src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                                alt="" />
+                        </a>
+                        <div class="pt-2 space-y-2">
+                            <div>
+                                <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                    Beautiful Things’ A Memoir. Beautiful
+                                    Things’ A Memoir. Beautiful Things’ A
+                                    Memoir.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 items-center w-full">
+                                <div class="col-span-1">
+                                    <p class="text-gray-800 text-xl">$20.00</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Item 2 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
                             alt="" />
                     </a>
 
@@ -597,12 +670,14 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
@@ -623,16 +698,18 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 4 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
                             alt="" />
                     </a>
 
@@ -649,12 +726,14 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
@@ -680,63 +759,39 @@
                 </div>
             </div>
             <!-- Item 1 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
-                <div class="">
-                    <a href="#">
-                        <img class="mx-auto h-full aspect-[6/9] rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
-                            alt="" />
-                    </a>
-
-                    <div class="pt-2 space-y-2">
-                        <div>
-                            <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
-                                Beautiful Things’ A Memoir. Beautiful
-                                Things’ A Memoir. Beautiful Things’ A
-                                Memoir.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-2 items-center w-full">
-                            <div class="col-span-1">
-                                <p class="text-gray-800 text-xl">$20.00</p>
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
+                <a href="{{ url('/view') }}">
+                    <div class="">
+                        <a href="{{ url('/view') }}">
+                            <img class="mx-auto h-full aspect-[6/9] rounded-lg"
+                                src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                                alt="" />
+                        </a>
+                        <div class="pt-2 space-y-2">
+                            <div>
+                                <p class="hover:text-[#FFC30E] transition cursor-pointer line-clamp-2">
+                                    Beautiful Things’ A Memoir. Beautiful
+                                    Things’ A Memoir. Beautiful Things’ A
+                                    Memoir.
+                                </p>
                             </div>
-                            <!-- Add to card -->
-                            <!-- <div class="font-medium text-sm col-span-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <button
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        class="text-gray-800 border bg-[#FFC30E] hover:bg-white hover:text-[#FFC30E] hover:shadow-lg transition rounded-full text-sm p-1 px-2 flex items-center justify-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            width="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            height="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            viewBox="0 0 24 24"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            fill="none"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke="currentColor"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-width="2"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-linecap="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-linejoin="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            class="lucide lucide-shopping-cart"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <circle cx="8" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <circle cx="19" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <path
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        Add to Card
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                </div> -->
+                            <div class="grid grid-cols-2 items-center w-full">
+                                <div class="col-span-1">
+                                    <p class="text-gray-800 text-xl">$20.00</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Item 2 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
                             alt="" />
                     </a>
 
@@ -753,38 +808,14 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
-                            <!-- Add to card -->
-                            <!-- <div class="font-medium text-sm col-span-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <button
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        class="text-gray-800 border bg-[#FFC30E] hover:bg-white hover:text-[#FFC30E] hover:shadow-lg transition rounded-full text-sm p-1 px-2 flex items-center justify-center"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            width="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            height="13"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            viewBox="0 0 24 24"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            fill="none"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke="currentColor"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-width="2"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-linecap="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            stroke-linejoin="round"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            class="lucide lucide-shopping-cart"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        >
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <circle cx="8" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <circle cx="19" cy="21" r="1" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <path
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        Add to Card
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                </div> -->
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
@@ -805,16 +836,18 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 4 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"
-                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-2.png"
+                            src="https://uiparadox.co.uk/templates/book_store/v2/assets/media/arrivals/book-3.png"
                             alt="" />
                     </a>
 
@@ -831,12 +864,14 @@
                             <div class="col-span-1">
                                 <p class="text-gray-800 text-xl">$20.00</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
-            <div class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+            <div
+                class="rounded-xl shadow-sm border border-gray-200 bg-white p-4 hover:scale-105 duration-300 dark:border-gray-700 dark:bg-gray-800">
                 <div class="">
                     <a href="#">
                         <img class="mx-auto h-full aspect-[6/9] object-cover border rounded-lg"

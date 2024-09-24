@@ -24,3 +24,7 @@ Route::get('/about_us', function () {
 Route::get('/shop', function () {
     return view('client.shop');
 });
+
+Route::get('/kidsbook', function () {
+    return view('client.kidsbook');
+});

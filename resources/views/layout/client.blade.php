@@ -91,7 +91,6 @@
                                 class="{{ request()->is('/') ? ' decoration-[#ffc30e] underline underline-offset-8 text-black' : 'decoration-[#ffc30e] hover:underline underline-offset-8 text-black' }}">
                                 Home</a>
                         </li>
-
                         <li>
                             <button id="mega-menu-full-dropdown-button" //data-collapse-toggle="mega-menu-full-dropdown"
                                 id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
@@ -134,23 +133,23 @@
                         <!-- End Education -->
                         </li>
                         <li>
-                            <a href="{{ url('/product') }}"
-                                class="{{ request()->is('product') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }}">Biography</a>
+                            <a href="{{ url('/book') }}"
+                                class="{{ request()->is('book') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }}">Biography</a>
                         </li>
                         <li>
-                            <a href="{{ url('/contact') }}"
-                                class="{{ request()->is('contact') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }}">Kid
+                            <a href="{{ url('/kidsbook') }}"
+                                class="{{ request()->is('kidsbook') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }}">Kid
                                 Books</a>
                         </li>
-
-                        <li><a href="{{ url('/about_us') }}"
+                        <li>
+                            <a href="{{ url('/about_us') }}"
                                 class="{{ request()->is('about_us') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }}">About
                                 Us</a>
                         </li>
                     </ul>
                     <!-- Chat Button - visible on all screen sizes -->
-                    <section>
-                        <div class="items-center md:ml-8 mr-2 flex justify-between gap-2 w-full md:w-auto md:order-1">
+                    <section class="mr-2">
+                        <div class="items-center md:ml-8  flex justify-between gap-2 w-full md:w-auto md:order-1">
                             <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -173,11 +172,11 @@
                         </div>
                     </section>
                     <!-- Mobile Menu Toggle -->
-                    <div class="lg:hidden">
+                    <div class="lg:hidden ">
                         <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false"
                             class="focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
@@ -322,6 +321,7 @@
                 </div>
                 <!-- End Dropdown -->
         </nav>
+        {{-- mobile menu --}}
         <div id="mobile-menu"
             class="border fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
             tabindex="-1" aria-labelledby="drawer-navigation-label">
@@ -369,14 +369,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ url('/book') }}"
                             class="{{ request()->is('biology') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }} flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <img src="{{ asset('assets/images/biography.png') }}" class="w-5">
                             <span class="ms-3">Biography</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ url('/book') }}"
                             class="{{ request()->is('') ? 'decoration-[#ffc30e] underline underline-offset-8 text-black' : 'text-black' }} flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <img src="{{ asset('assets/images/lovebook.png') }}" class="w-5">
                             <span class="ms-3">Kid Book</span>
@@ -413,73 +413,103 @@
     @yield('content')
 
     <!-- Start Footer -->
-    <footer class="bg-slate-100 p-4 sm:p-6 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl">
-            <div class="md:flex md:justify-between grid grid-cols-2 gap-5">
-                <div class="md:mb-0 grid items-center">
-                    <a href="#" class="flex items-center justify-center space-x-1 rtl:space-x-reverse">
-                        <img src="{{ asset('assets/logo/DGLogo.png') }}" class="overflow-hidden h-[60px]" />
-                        <img src="{{ asset('assets/logo/textLogo.png') }}" class="overflow-hidden h-[50px]" />
-                    </a>
-                </div>
-                <div>
-                    <h3 class="text-xl font-medium">Store Information</h3>
-                    <div class="text-sm space-y-2">
-                        <p class="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
-                                <path
-                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            123 Street, Anytown, USA.
-                        </p>
-                        <p class="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>(+00) 123-456-789
-                        </p>
-                        <p>Email us:demo@example.com</p>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h2 class="mb-3 text-sm font-semibold uppercase dark:text-white lg:text-center">
-                        Social Link
-                    </h2>
+    <footer class="bg-[#2b334a] text-gray-400 py-12">
+        <div class="container max-w-screen-xl mx-auto justify-between flex flex-col  md:flex-row gap-8 px-4">
+            <!-- Information Section -->
+            <div>
+                <h2 class="text-white font-bold mb-4">Information</h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                            stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Phnom Penh, Cambodia
+                    </li>
+                    <li class="flex items-center  gap-5 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-phone-call">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                            <path d="M14.05 6A5 5 0 0 1 18 10" />
+                        </svg>
+                        010775589
+                    </li>
+                    <li class="flex items-center  gap-5 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-clock-3">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16.5 12" />
+                        </svg>
+                        Mon – Sat: 8 am – 5 pm, Sunday: CLOSED
+                    </li>
+                    <!-- Add other contact items similarly -->
+                </ul>
+            </div>
 
-                    <div class="flex flex-wrap gap-2 mb-4 lg:justify-center sm:mt-0">
-                        <a href="#" class="hover:text-gray-900 dark:hover:text-white">
-                            <img class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
-                                src="{{ asset('assets/images/youtube.png') }}" alt="Facebook page" />
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                        <a href="#" class="hover:text-gray-900 dark:hover:text-white">
-                            <img class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
-                                src="{{ asset('assets/images/telegram.png') }}" alt="Facebook page" />
-                            <span class="sr-only">Telegram</span>
-                        </a>
-                        <a href="#" class="hover:text-gray-900 dark:hover:text-white">
-                            <img class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
-                                src="{{ asset('assets/images/facebook.png') }}" alt="Facebook page" />
-                            <span class="sr-only">WWW</span>
-                        </a>
-                    </div>
+            <!-- Menu Section -->
+            {{-- <div>
+                <h2 class="text-white font-bold mb-4">Menu</h2>
+                <ul class="space-y-2">
+                    <li><a href="{{ url('/') }}" class="hover:text-white">Home</a></li>
+                    <li><a href="{{ url('/about_us') }}" class="hover:text-white"> About Us</a></li>
+                    <li><a href="{{ url('/service') }}" class="hover:text-white">Services</a></li>
+                    <li><a href="{{ url('/product') }}" class="hover:text-white">Products</a></li>
+                    <li><a href="{{ url('/contact') }}" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div> --}}
+            {{-- Social Media --}}
+            <div>
+                <h2 class="text-white font-bold mb-4">Social Media</h2>
+                <div class="flex gap-4 mt-6 md:mt-0">
+                    <!-- Facebook icons -->
+                    <a href="#" class="bg-[#252443] p-2 rounded-md hover:bg-blue-600">
+                        {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg> --}}
+                        <img src="{{ asset('assets/images/telegram.png') }}" class="w-12">
+                    </a>
+                    <!-- Email icons -->
+                    <a href="#" class="bg-[#252443] p-2 rounded-md hover:bg-blue-600">
+                        {{-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-youtube">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                            <path d="m10 15 5-3-5-3z" />
+                        </svg> --}}
+                        <img src="{{ asset('assets/images/facebook.png') }}" class="w-12">
+                    </a>
+                    <!-- Telegram icons -->
+                    <a href="#" class="bg-[#252443] p-2 rounded-md hover:bg-blue-600">
+                        {{-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                            fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-send">
+                            <path
+                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                            <path d="m21.854 2.147-10.94 10.939" />
+                        </svg> --}}
+                        <img src="{{ asset('assets/images/youtube.png') }}" class="w-12">
+                    </a>
+                    <!-- Add other social media icons similarly -->
                 </div>
             </div>
         </div>
-        <div class="my-3 max-w-screen-xl  border-gray-700 mx-auto dark:border-gray-700 lg:my-6">
-            <hr class="my-3   border-gray-700  dark:border-gray-700 lg:my-6" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-700 sm:text-center dark:text-gray-400">© 2024 . All Rights Reserved.
-                </span>
-            </div>
+
+        <!-- Footer Bottom -->
+        <hr class="w-[15%] mx-auto mt-5">
+        <div class="max-w-screen-xl mt-5  text-center mx-auto px-4">
+            <p class="text-xs ">&copy; Corasoft | All Rights Reserved</p>
         </div>
     </footer>
     <!-- End Footer -->
+
 </body>
 
 </html>
