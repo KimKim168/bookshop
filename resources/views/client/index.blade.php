@@ -127,7 +127,7 @@
     <!-- Start category -->
     <section class="max-w-screen-xl mx-auto mt-10 space-y-6 ">
         <div>
-            <p class="text-center text-4xl">
+            <p class="text-center text-2xl sm:text-3xl md:text-4xl">
                 Our Categories
             </p>
         </div>
